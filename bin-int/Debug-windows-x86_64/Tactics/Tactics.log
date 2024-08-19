@@ -1,0 +1,3 @@
+﻿     Creando biblioteca ..\bin\Debug-windows-x86_64Tactics\Tactics.lib y objeto ..\bin\Debug-windows-x86_64Tactics\Tactics.exp
+Tactics.obj : error LNK2019: símbolo externo "class Denji::Application * __cdecl Denji::CreateApplication(void)" (?CreateApplication@Denji@@YAPEAVApplication@1@XZ) sin resolver al que se hace referencia en la función main
+..\bin\Debug-windows-x86_64Tactics\Tactics.exe : fatal error LNK1120: 1 externos sin resolver

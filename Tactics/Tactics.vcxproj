@@ -55,21 +55,21 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\bin\Debug-windows-x86_64Tactics\</OutDir>
+    <OutDir>..\bin\Debug-windows-x86_64\Tactics\</OutDir>
     <IntDir>..\bin-int\Debug-windows-x86_64\Tactics\</IntDir>
     <TargetName>Tactics</TargetName>
     <TargetExt>.exe</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\bin\Release-windows-x86_64Tactics\</OutDir>
+    <OutDir>..\bin\Release-windows-x86_64\Tactics\</OutDir>
     <IntDir>..\bin-int\Release-windows-x86_64\Tactics\</IntDir>
     <TargetName>Tactics</TargetName>
     <TargetExt>.exe</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\bin\Dist-windows-x86_64Tactics\</OutDir>
+    <OutDir>..\bin\Dist-windows-x86_64\Tactics\</OutDir>
     <IntDir>..\bin-int\Dist-windows-x86_64\Tactics\</IntDir>
     <TargetName>Tactics</TargetName>
     <TargetExt>.exe</TargetExt>
@@ -137,6 +137,9 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Tactics.cpp" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Dengine\Dengine.vcxproj">
       <Project>{DF97D169-4B77-5005-548F-DBDBC0EDB666}</Project>

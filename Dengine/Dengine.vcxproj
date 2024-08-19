@@ -14,9 +14,6 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="src\core.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{DF97D169-4B77-5005-548F-DBDBC0EDB666}</ProjectGuid>
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
@@ -152,6 +149,15 @@
       <Command>IF EXIST ..\bin\Dist-windows-x86_64Dengine\Dengine.dll\ (xcopy /Q /E /Y /I ..\bin\Dist-windows-x86_64Dengine\Dengine.dll ..\bin\Dist-windows-x86_64\Tactics &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Dist-windows-x86_64Dengine\Dengine.dll ..\bin\Dist-windows-x86_64\Tactics &gt; nul)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Dengine.h" />
+    <ClInclude Include="src\Engine\Application.h" />
+    <ClInclude Include="src\Engine\EntryPoint.h" />
+    <ClInclude Include="src\Engine\core.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Engine\Application.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

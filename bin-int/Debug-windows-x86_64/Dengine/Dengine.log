@@ -1,0 +1,3 @@
+﻿  Dengine.vcxproj -> C:\Users\PC2-Alumno 13\Documents\Motor\Dengine\bin\Debug-windows-x86_64Dengine\Dengine.dll
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(160,5): error MSB3073: El comando "IF EXIST ..\bin\Debug-windows-x86_64Dengine\Dengine.dll\ (xcopy /Q /E /Y /I ..\bin\Debug-windows-x86_64Dengine\Dengine.dll ..\bin\Debug-windows-x86_64\Tactics > nul) ELSE (xcopy /Q /Y /I ..\bin\Debug-windows-x86_64Dengine\Dengine.dll ..\bin\Debug-windows-x86_64\Tactics > nul)
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(160,5): error MSB3073: :VCEnd" salió con el código 2.
