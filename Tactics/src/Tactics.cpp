@@ -13,6 +13,6 @@ public:
 	}
 };
 
-Denji::Application* CreateApplication() {
+Denji::Application* Denji::CreateApplication() {
 	return new Tactics();
 }

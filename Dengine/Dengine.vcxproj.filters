@@ -16,10 +16,13 @@
     <ClInclude Include="src\Engine\core.h">
       <Filter>Engine</Filter>
     </ClInclude>
+    <ClInclude Include="src\Engine\Log.h" />
+    <ClInclude Include="src\Engine\Event\Event.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Engine\Application.cpp">
       <Filter>Engine</Filter>
     </ClCompile>
+    <ClCompile Include="src\Engine\Log.cpp" />
   </ItemGroup>
 </Project>
