@@ -1,4 +1,6 @@
+#include "denjipch.h"
 #include "Application.h"
+
 namespace Denji {
 	Application::Application() {
 

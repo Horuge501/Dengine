@@ -1,9 +1,7 @@
 #pragma once
+#include "denjipch.h"
 #include "Engine/core.h"
 
-#include <string>
-#include <format>
-#include <windows.h>
 
 namespace Denji{
 	class DENJI_API Log {

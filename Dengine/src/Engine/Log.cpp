@@ -1,5 +1,6 @@
+#include "denjipch.h"
 #include "Log.h"
-#include <iostream>
+
 
 Denji::Log::Log(std::string name)
 {

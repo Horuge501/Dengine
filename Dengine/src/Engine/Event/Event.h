@@ -1,7 +1,7 @@
 #pragma once
 
+#include "denjipch.h"
 #include "Engine/core.h"
-#include <string>
 
 namespace Denji {
 	enum class EventType {
@@ -22,10 +22,10 @@ namespace Denji {
 	};
 
 #define EVENT_CLASS_TYPE(type) static EventType GetStaticType() { return EventType::##type; }\
-								virtual EventType GetEvenType() const override { return GetStaticType(); }\
-								virtual const char* GetName() const override { return category; }
+								virtual EventType GetEventType() const override { return GetStaticType(); }\
+								virtual const char* GetName() const override { return #type; }
 
-#define EVENT_CLASS_CATEGORY(category) virutal int GetCategoryFlags() const override { return category; }
+#define EVENT_CLASS_CATEGORY(category) virtual int GetCategoryFlags() const override { return category; }
 
 	class DENJI_API Event {
 	public:
