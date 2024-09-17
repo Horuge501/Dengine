@@ -1,5 +1,3 @@
-﻿  Tactics.cpp
-C:\Users\PC2-Alumno 13\Documents\Motor\Dengine\Dengine\src\Engine\Log.h(33,15): warning C4251: 'Denji::Log::_name': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' necesita tener una interfaz DLL para que la utilicen los clientes de class 'Denji::Log'
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\xstring(5155,29): message : vea la declaración de 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-     Creando biblioteca ..\bin\Debug-windows-x86_64\Tactics\Tactics.lib y objeto ..\bin\Debug-windows-x86_64\Tactics\Tactics.exp
-  Tactics.vcxproj -> C:\Users\PC2-Alumno 13\Documents\Motor\Dengine\bin\Debug-windows-x86_64\Tactics\Tactics.exe
+﻿     Creando biblioteca ..\bin\Debug-windows-x86_64\Tactics\Tactics.lib y objeto ..\bin\Debug-windows-x86_64\Tactics\Tactics.exp
+Tactics.obj : error LNK2001: símbolo externo "private: static class Denji::Log * Denji::Log::_globalLog" (?_globalLog@Log@Denji@@0PEAV12@EA) sin resolver
+..\bin\Debug-windows-x86_64\Tactics\Tactics.exe : fatal error LNK1120: 1 externos sin resolver

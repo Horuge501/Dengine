@@ -10,6 +10,11 @@ workspace "Dengine"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "Dengine/vendor/GLFW/include"
+
+include "Dengine/vendor/GLFW"
+
 project "Dengine"
 	location "Dengine"
 	kind "SharedLib"
@@ -28,7 +33,13 @@ project "Dengine"
 	}
 
 	includedirs{
-		"%{prj.name}/src"
+		"%{prj.name}/src",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"
@@ -48,14 +59,17 @@ project "Dengine"
 
 	filter "configurations:Debug"
 		defines "DENJI_DEBUG"
+		buildoptions "/MDd"
 		optimize "On"
 
 	filter "configurations:Release"
 		defines "DENJI_RELEASE"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "DENJI_DIST"
+		buildoptions "/MD"
 		optimize "On"
 
 project "Tactics"

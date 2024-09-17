@@ -28,6 +28,7 @@ namespace Denji {
 	};
 
 	class DENJI_API WindowCloseEvent : public Event {
+	public:
 		WindowCloseEvent() {}
 
 		EVENT_CLASS_TYPE(WindowClose)

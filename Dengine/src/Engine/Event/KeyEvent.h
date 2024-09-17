@@ -26,6 +26,7 @@ namespace Denji {
 			ss << "Key Pressed Event: " << _keyCode << "(" << _repeateCount << ")";
 			return ss.str();
 		}
+		EVENT_CLASS_TYPE(KeyPressed)
 
 	private:
 		int _repeateCount;
